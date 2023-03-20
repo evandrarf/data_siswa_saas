@@ -44,6 +44,10 @@
             <span class="input-group-text" id="basic-addon1">Telepon</span>
             <input type="text" class="form-control" required name="telepon" placeholder="Telepon" aria-label="Telepon" aria-describedby="basic-addon1">
           </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Hobi</span>
+            <input type="text" class="form-control" required name="hobi" placeholder="Hobi" aria-label="Hobi" aria-describedby="basic-addon1">
+          </div>
           <div class="d-flex gap-3">
             <button class="btn btn-primary" type="submit">Submit</button>
             <button class="btn btn-danger" type="reset">Reset</button>

@@ -39,6 +39,7 @@ $data = $stat->fetchAll(PDO::FETCH_ASSOC);
           <th scope="col">Kompetensi Keahlian</th>
           <th scope="col">Alamat</th>
           <th scope="col">Telepon</th>
+          <th scope="col">Hobi</th>
         </tr>
       </thead>
       <tbody>
@@ -50,6 +51,7 @@ $data = $stat->fetchAll(PDO::FETCH_ASSOC);
             <td><?= $siswa['kompetensi'] ?></td>
             <td><?= $siswa['alamat'] ?></td>
             <td><?= $siswa['telepon'] ?></td>
+            <td><?= $siswa['hobi'] ?></td>
           </tr>
         <?php endforeach ?>
       </tbody>
