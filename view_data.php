@@ -2,7 +2,7 @@
 
 require_once 'koneksi.php';
 
-$sql = "SELECT * FROM data_siswa";
+$sql = "SELECT * FROM data_siswa ORDER BY nisn ASC";
 
 $stat = $koneksi->prepare($sql);
 
@@ -40,6 +40,7 @@ $data = $stat->fetchAll(PDO::FETCH_ASSOC);
           <th scope="col">Alamat</th>
           <th scope="col">Telepon</th>
           <th scope="col">Hobi</th>
+          <th scope="col">Action</th>
         </tr>
       </thead>
       <tbody>
@@ -52,6 +53,7 @@ $data = $stat->fetchAll(PDO::FETCH_ASSOC);
             <td><?= $siswa['alamat'] ?></td>
             <td><?= $siswa['telepon'] ?></td>
             <td><?= $siswa['hobi'] ?></td>
+            <td><a href="edit.php?nisn=<?= $siswa['nisn'] ?>" class="btn btn-warning btn-sm">Edit</a><a href="delete.php" class="btn btn-sm btn-danger mx-2">Delete</a></td>
           </tr>
         <?php endforeach ?>
       </tbody>
